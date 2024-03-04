@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+    anime-girls-holding-programming-books:
+        build:
+            context: .
+            dockerfile: ./dockerfiles/production/Dockerfile
+        image: anime-girls-holding-programming-books:latest
+        restart: always
+        ports:
+            - 3000:3000
+        deploy:
+            resources:
+                limits:
+                    cpus: '0.5'
+                    memory: 512M
