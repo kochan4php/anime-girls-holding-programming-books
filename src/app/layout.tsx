@@ -26,9 +26,11 @@ const nunito = Nunito({ subsets: ["latin"] });
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en" className="scroll-smooth">
-            <body suppressHydrationWarning className={nunito.className}>
-                <NextTopLoader showSpinner={false} />
-                {children}
+            <body className={nunito.className} suppressHydrationWarning>
+                <div>
+                    <NextTopLoader showSpinner={false} />
+                    {children}
+                </div>
             </body>
         </html>
     );
