@@ -3,7 +3,7 @@ import Main from "@/layouts/main";
 export default async function Home() {
     return (
         <Main>
-            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-200 m-auto">
+            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-800 m-auto">
                 <img className="w-full" src="/menggoda.jpg" alt="Sunset in the mountains" />
                 <div className="pt-3 pb-3 flex justify-center gap-2">
                     <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
@@ -26,7 +26,7 @@ export default async function Home() {
                     </button>
                 </div>
             </div>
-            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-200 m-auto">
+            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-800 m-auto">
                 <img className="w-full" src="/menggoda.jpg" alt="Sunset in the mountains" />
                 <div className="pt-3 pb-3 flex justify-center gap-2">
                     <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
@@ -49,7 +49,7 @@ export default async function Home() {
                     </button>
                 </div>
             </div>
-            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-200 m-auto">
+            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-800 m-auto">
                 <img className="w-full" src="/menggoda.jpg" alt="Sunset in the mountains" />
                 <div className="pt-3 pb-3 flex justify-center gap-2">
                     <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
@@ -72,7 +72,7 @@ export default async function Home() {
                     </button>
                 </div>
             </div>
-            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-200 m-auto">
+            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-800 m-auto">
                 <img className="w-full" src="/menggoda.jpg" alt="Sunset in the mountains" />
                 <div className="pt-3 pb-3 flex justify-center gap-2">
                     <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
@@ -95,7 +95,7 @@ export default async function Home() {
                     </button>
                 </div>
             </div>
-            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-200 m-auto">
+            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-800 m-auto">
                 <img className="w-full" src="/menggoda.jpg" alt="Sunset in the mountains" />
                 <div className="pt-3 pb-3 flex justify-center gap-2">
                     <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
