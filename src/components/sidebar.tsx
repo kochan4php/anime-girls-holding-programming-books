@@ -40,19 +40,9 @@ export default function Sidebar({ folders }: any) {
                 className="bg-slate-700 text-gray-100 md:w-[20%] w-[65%] space-y-6 pt-6 px-0 absolute top-0 bottom-0 left-0 transform md:translate-x-0 transition duration-200 ease-in-out md:flex md:flex-col md:justify-between overflow-y-auto z-40 border-r-2 border-slate-500 md:border-0"
             >
                 <div className="flex flex-col space-y-6">
-                    <Marquee>
-                        <a href="#" className="text-white flex items-center space-x-2 px-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                                />
-                            </svg>
-                            <span className="text-2xl font-extrabold whitespace-nowrap truncate">Anime Girls Holding Programming Books</span>
-                        </a>
-                    </Marquee>
+                    <a href="#" className="text-white flex items-center space-x-2 px-4">
+                        <span className="text-2xl font-extrabold break-words">Anime Girls Holding Programming Books</span>
+                    </a>
 
                     <nav data-dev-hint="main navigation">
                         {folders.map((folder: any) => (
