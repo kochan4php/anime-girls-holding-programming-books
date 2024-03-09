@@ -37,7 +37,7 @@ export default function Sidebar({ folders }: any) {
 
             <aside
                 id="sidebar"
-                className="bg-gradient-to-tl from-slate-900 via-slate-800 to-slate-900 text-gray-100 sm:w-[35%] md:w-[20%] w-[65%] space-y-6 pt-6 px-0 absolute top-0 bottom-0 left-0 transform md:translate-x-0 transition duration-200 ease-in-out md:flex md:flex-col md:justify-between overflow-y-auto z-40 border-r-4 border-slate-700"
+                className="bg-gradient-to-tl from-slate-900 via-slate-800 to-slate-900 text-gray-100 md:w-[20%] w-[65%] space-y-6 pt-6 px-0 absolute top-0 bottom-0 left-0 transform md:translate-x-0 transition duration-200 ease-in-out md:flex md:flex-col md:justify-between overflow-y-auto z-40 border-r-4 border-slate-700"
             >
                 <div className="flex flex-col space-y-6">
                     <Marquee>

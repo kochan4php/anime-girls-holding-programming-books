@@ -2,49 +2,32 @@ import api from "@/configs/axios";
 import blurDataUrl from "@/data/blur-data-url";
 import Main from "@/layouts/main";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function FolderName({ params }: any) {
     const response = await api.get(`/repos/cat-milk/Anime-Girls-Holding-Programming-Books/contents/${params.name}`);
-    const contents = response.data.map((item: any) => ({ url: item.download_url, name: item.name }));
+    const contents = response.data.map((item: any) => ({ url: item.download_url, name: item.name, path: item.path }));
 
     return (
         <Main title={`Anime Girls Holding ${decodeURIComponent(params.name)} Books`}>
             {contents.map(({ url: content, name }: any, index: number) => (
-                <div key={index} className="min-w-full h-auto sm:min-h-full rounded overflow-hidden shadow-xl border border-slate-800 m-auto">
-                    <Image
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        className="rounded-sm h-auto sm:h-[275px] w-full object-cover"
-                        priority={true}
-                        unoptimized={content.endsWith(".gif") ? true : false}
-                        loading="eager"
-                        quality={100}
-                        src={content}
-                        alt={name}
-                        placeholder="blur"
-                        blurDataURL={blurDataUrl}
-                    />
-                    <div className="pt-3 pb-3 flex justify-center gap-2">
-                        <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-                                />
-                            </svg>
-                        </button>
-                        <button className="text-white transition-all bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm p-2 text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
-                                />
-                            </svg>
-                        </button>
-                    </div>
+                <div key={index} className="min-w-full h-auto sm:min-h-full rounded overflow-hidden shadow-md border border-slate-950 m-auto">
+                    <Link href={content}>
+                        <Image
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            className="rounded-sm h-auto sm:h-[275px] w-full object-cover"
+                            priority={true}
+                            unoptimized={content.endsWith(".gif") ? true : false}
+                            loading="eager"
+                            quality={100}
+                            src={content}
+                            alt={name}
+                            placeholder="blur"
+                            blurDataURL={blurDataUrl}
+                        />
+                    </Link>
                 </div>
             ))}
         </Main>

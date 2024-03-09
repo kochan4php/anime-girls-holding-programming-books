@@ -33,7 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 suppressHydrationWarning
             >
                 <div>
-                    <NextTopLoader showSpinner={false} />
+                    <NextTopLoader showSpinner={true} />
                     <Suspense fallback={<Loading />}>{children}</Suspense>
                 </div>
             </body>
