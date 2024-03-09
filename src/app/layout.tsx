@@ -3,6 +3,8 @@ import { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
 import { Nunito } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const openGraph: OpenGraph = {
     title: "Anime Girl Holding Programming Book",
@@ -26,10 +28,13 @@ const nunito = Nunito({ subsets: ["latin"] });
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en" className="scroll-smooth">
-            <body className={nunito.className} suppressHydrationWarning>
+            <body
+                className={`${nunito.className} !overflow-x-hidden bg-gradient-to-tl from-slate-900 via-slate-800 to-slate-900 min-h-screen flex flex-col justify-between`}
+                suppressHydrationWarning
+            >
                 <div>
                     <NextTopLoader showSpinner={false} />
-                    {children}
+                    <Suspense fallback={<Loading />}>{children}</Suspense>
                 </div>
             </body>
         </html>

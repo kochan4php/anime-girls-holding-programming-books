@@ -1,10 +1,24 @@
+import blurDataUrl from "@/data/blur-data-url";
 import Main from "@/layouts/main";
+import Image from "next/image";
 
 export default async function Home() {
     return (
-        <Main>
-            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-800 m-auto">
-                <img className="w-full" src="/menggoda.jpg" alt="Sunset in the mountains" />
+        <Main title="Anime Girls Holding Programming Books">
+            <div className="min-w-full h-auto sm:min-h-full rounded overflow-hidden shadow-xl border border-slate-800 m-auto">
+                <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="rounded-sm h-auto sm:h-[275px] w-full object-cover"
+                    priority={true}
+                    loading="eager"
+                    quality={100}
+                    src="/menggoda.jpg"
+                    alt="Menggoda"
+                    placeholder="blur"
+                    blurDataURL={blurDataUrl}
+                />
                 <div className="pt-3 pb-3 flex justify-center gap-2">
                     <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -26,8 +40,20 @@ export default async function Home() {
                     </button>
                 </div>
             </div>
-            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-800 m-auto">
-                <img className="w-full" src="/menggoda.jpg" alt="Sunset in the mountains" />
+            <div className="min-w-full h-auto sm:min-h-full rounded overflow-hidden shadow-xl border border-slate-800 m-auto">
+                <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="rounded-sm h-auto sm:h-[275px] w-full object-cover"
+                    priority={true}
+                    loading="eager"
+                    quality={100}
+                    src="/menggoda.jpg"
+                    alt="Menggoda"
+                    placeholder="blur"
+                    blurDataURL={blurDataUrl}
+                />
                 <div className="pt-3 pb-3 flex justify-center gap-2">
                     <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -49,8 +75,20 @@ export default async function Home() {
                     </button>
                 </div>
             </div>
-            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-800 m-auto">
-                <img className="w-full" src="/menggoda.jpg" alt="Sunset in the mountains" />
+            <div className="min-w-full h-auto sm:min-h-full rounded overflow-hidden shadow-xl border border-slate-800 m-auto">
+                <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="rounded-sm h-auto sm:h-[275px] w-full object-cover"
+                    priority={true}
+                    loading="eager"
+                    quality={100}
+                    src="/menggoda.jpg"
+                    alt="Menggoda"
+                    placeholder="blur"
+                    blurDataURL={blurDataUrl}
+                />
                 <div className="pt-3 pb-3 flex justify-center gap-2">
                     <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -72,8 +110,20 @@ export default async function Home() {
                     </button>
                 </div>
             </div>
-            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-800 m-auto">
-                <img className="w-full" src="/menggoda.jpg" alt="Sunset in the mountains" />
+            <div className="min-w-full h-auto sm:min-h-full rounded overflow-hidden shadow-xl border border-slate-800 m-auto">
+                <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="rounded-sm h-auto sm:h-[275px] w-full object-cover"
+                    priority={true}
+                    loading="eager"
+                    quality={100}
+                    src="/menggoda.jpg"
+                    alt="Menggoda"
+                    placeholder="blur"
+                    blurDataURL={blurDataUrl}
+                />
                 <div className="pt-3 pb-3 flex justify-center gap-2">
                     <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -95,8 +145,20 @@ export default async function Home() {
                     </button>
                 </div>
             </div>
-            <div className="min-w-full rounded overflow-hidden shadow-md border border-slate-800 m-auto">
-                <img className="w-full" src="/menggoda.jpg" alt="Sunset in the mountains" />
+            <div className="min-w-full h-auto sm:min-h-full rounded overflow-hidden shadow-xl border border-slate-800 m-auto">
+                <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="rounded-sm h-auto sm:h-[275px] w-full object-cover"
+                    priority={true}
+                    loading="eager"
+                    quality={100}
+                    src="/menggoda.jpg"
+                    alt="Menggoda"
+                    placeholder="blur"
+                    blurDataURL={blurDataUrl}
+                />
                 <div className="pt-3 pb-3 flex justify-center gap-2">
                     <button className="text-white transition-all bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">

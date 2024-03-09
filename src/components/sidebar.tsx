@@ -6,7 +6,7 @@ export default function Sidebar({ folders }: any) {
         <div>
             <input type="checkbox" id="menu-open" className="hidden" />
 
-            <header className="bg-slate-700 text-gray-100 flex justify-between md:hidden absolute top-0 left-0 right-0 z-10">
+            <header className="bg-slate-800 text-gray-100 flex justify-between md:hidden absolute top-0 left-0 right-0 z-10">
                 <a href="/" className="block p-4 text-white font-bold whitespace-nowrap truncate">
                     Waifu Pics
                 </a>
@@ -37,18 +37,20 @@ export default function Sidebar({ folders }: any) {
 
             <aside
                 id="sidebar"
-                className="bg-slate-700 text-gray-100 md:w-[20%] w-[65%] space-y-6 pt-6 px-0 absolute top-0 bottom-0 left-0 transform md:translate-x-0 transition duration-200 ease-in-out md:flex md:flex-col md:justify-between overflow-y-auto z-40 border-r-2 border-slate-500 md:border-0"
+                className="bg-gradient-to-tl from-slate-900 via-slate-800 to-slate-900 text-gray-100 sm:w-[35%] md:w-[20%] w-[65%] space-y-6 pt-6 px-0 absolute top-0 bottom-0 left-0 transform md:translate-x-0 transition duration-200 ease-in-out md:flex md:flex-col md:justify-between overflow-y-auto z-40 border-r-4 border-slate-700"
             >
                 <div className="flex flex-col space-y-6">
-                    <a href="#" className="text-white flex items-center space-x-2 px-4">
-                        <span className="text-2xl font-extrabold break-words">Anime Girls Holding Programming Books</span>
-                    </a>
+                    <Marquee>
+                        <a href="#" className="text-white flex items-center space-x-2 px-4">
+                            <span className="text-2xl font-extrabold break-words">Anime Girls Holding Programming Books</span>
+                        </a>
+                    </Marquee>
 
                     <nav data-dev-hint="main navigation">
                         {folders.map((folder: any) => (
                             <Link
                                 key={folder.sha}
-                                href={`/folders/${folder.name.toLowerCase()}`}
+                                href={`/folders/${encodeURIComponent(folder.name)}`}
                                 className="flex items-center space-x-2 py-2 px-4 transition duration-200 hover:bg-violet-900 hover:text-white"
                             >
                                 <span>{folder.name}</span>
